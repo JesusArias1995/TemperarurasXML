@@ -19,5 +19,6 @@ for i in arbol.findall("prediccion/dia"):
 	if i.attrib["fecha"]==time.strftime("%Y-%m-%d"):
 		maxima=i.find("temperatura/maxima")
 		minima=i.find("temperatura/minima")
+print("Fecha:", time.strftime("%d/%m/%Y"))
 print("Temperatura máxima:", maxima.text)
 print("Temperatura mínima:", minima.text)
